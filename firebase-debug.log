@@ -1,0 +1,174 @@
+[debug] [2018-12-26T17:05:39.507Z] ----------------------------------------------------------------------
+[debug] [2018-12-26T17:05:39.514Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\라윤혜\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-12-26T17:05:39.514Z] CLI Version:   4.2.1
+[debug] [2018-12-26T17:05:39.514Z] Platform:      win32
+[debug] [2018-12-26T17:05:39.514Z] Node Version:  v8.12.0
+[debug] [2018-12-26T17:05:39.518Z] Time:          Thu Dec 27 2018 02:05:39 GMT+0900 (대한민국 표준시)
+[debug] [2018-12-26T17:05:39.518Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-12-26T17:05:39.563Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-12-26T17:05:39.566Z] > authorizing via signed-in user
+[debug] [2018-12-26T17:05:39.573Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-12-26T17:05:39.574Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+
+[debug] [2018-12-26T17:05:40.406Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-26T17:05:40.464Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/yune-manup  
+ 
+[debug] [2018-12-26T17:05:41.409Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-26T17:05:41.413Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/yune-manup  
+ 
+[debug] [2018-12-26T17:05:42.834Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\라윤혜\Desktop\fbroot\manup'...
+[info] 
+[debug] [2018-12-26T17:05:42.849Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/27826447342/clients/_:getWebAppConfig  
+ 
+[debug] [2018-12-26T17:05:44.004Z] <<< HTTP RESPONSE 200
+[info] i  hosting[yune-manup]: Serving hosting files from: public
+[info] +  hosting[yune-manup]: Local server: http://localhost:5000
+[debug] [2018-12-27T06:15:32.818Z] ----------------------------------------------------------------------
+[debug] [2018-12-27T06:15:32.827Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\라윤혜\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-12-27T06:15:32.827Z] CLI Version:   4.2.1
+[debug] [2018-12-27T06:15:32.827Z] Platform:      win32
+[debug] [2018-12-27T06:15:32.828Z] Node Version:  v8.12.0
+[debug] [2018-12-27T06:15:32.834Z] Time:          Thu Dec 27 2018 15:15:32 GMT+0900 (대한민국 표준시)
+[debug] [2018-12-27T06:15:32.834Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-12-27T06:15:32.887Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-12-27T06:15:32.889Z] > authorizing via signed-in user
+[debug] [2018-12-27T06:15:32.896Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-12-27T06:15:32.897Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+
+[debug] [2018-12-27T06:15:33.624Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-27T06:15:33.642Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/yune-manup  
+ 
+[debug] [2018-12-27T06:15:35.170Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-27T06:15:35.174Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/yune-manup  
+ 
+[debug] [2018-12-27T06:15:36.589Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\라윤혜\Desktop\fbroot\manup'...
+[info] 
+[debug] [2018-12-27T06:15:36.601Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/27826447342/clients/_:getWebAppConfig  
+ 
+[debug] [2018-12-27T06:15:37.428Z] <<< HTTP RESPONSE 200
+[info] i  hosting[yune-manup]: Serving hosting files from: public
+[info] +  hosting[yune-manup]: Local server: http://localhost:5000
+[debug] [2018-12-27T06:16:12.666Z] ----------------------------------------------------------------------
+[debug] [2018-12-27T06:16:12.672Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\라윤혜\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-12-27T06:16:12.673Z] CLI Version:   4.2.1
+[debug] [2018-12-27T06:16:12.673Z] Platform:      win32
+[debug] [2018-12-27T06:16:12.673Z] Node Version:  v8.12.0
+[debug] [2018-12-27T06:16:12.677Z] Time:          Thu Dec 27 2018 15:16:12 GMT+0900 (대한민국 표준시)
+[debug] [2018-12-27T06:16:12.677Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-12-27T06:16:12.709Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-12-27T06:16:12.711Z] > authorizing via signed-in user
+[debug] [2018-12-27T06:16:12.718Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/yune-manup  
+ 
+[debug] [2018-12-27T06:16:15.836Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-27T06:16:15.839Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/yune-manup  
+ 
+[debug] [2018-12-27T06:16:17.207Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\라윤혜\Desktop\fbroot\manup'...
+[info] 
+[debug] [2018-12-27T06:16:17.213Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/27826447342/clients/_:getWebAppConfig  
+ 
+[debug] [2018-12-27T06:16:17.867Z] <<< HTTP RESPONSE 200
+[warn] !  hosting: Port 5000 is not available. Trying another port...
+[info] i  hosting[yune-manup]: Serving hosting files from: public
+[info] +  hosting[yune-manup]: Local server: http://localhost:5005
+[debug] [2018-12-27T06:25:35.854Z] Error: write after end
+    at write_ (_http_outgoing.js:622:15)
+    at ServerResponse.write (_http_outgoing.js:617:10)
+    at ReadStream.ondata (_stream_readable.js:639:20)
+    at emitOne (events.js:116:13)
+    at ReadStream.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at ReadStream.Readable.push (_stream_readable.js:208:10)
+    at fs.read (fs.js:2059:12)
+    at FSReqWrap.wrapper [as oncomplete] (fs.js:658:17)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2018-12-27T06:26:59.408Z] ----------------------------------------------------------------------
+[debug] [2018-12-27T06:26:59.416Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\라윤혜\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-12-27T06:26:59.417Z] CLI Version:   4.2.1
+[debug] [2018-12-27T06:26:59.417Z] Platform:      win32
+[debug] [2018-12-27T06:26:59.417Z] Node Version:  v8.12.0
+[debug] [2018-12-27T06:26:59.421Z] Time:          Thu Dec 27 2018 15:26:59 GMT+0900 (대한민국 표준시)
+[debug] [2018-12-27T06:26:59.422Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-12-27T06:26:59.470Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-12-27T06:26:59.472Z] > authorizing via signed-in user
+[debug] [2018-12-27T06:26:59.481Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/yune-manup  
+ 
+[debug] [2018-12-27T06:27:00.918Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-27T06:27:00.923Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/yune-manup  
+ 
+[debug] [2018-12-27T06:27:02.473Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\라윤혜\Desktop\fbroot\manup'...
+[info] 
+[debug] [2018-12-27T06:27:02.481Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/27826447342/clients/_:getWebAppConfig  
+ 
+[debug] [2018-12-27T06:27:03.276Z] <<< HTTP RESPONSE 200
+[warn] !  hosting: Port 5000 is not available. Trying another port...
+[info] i  hosting[yune-manup]: Serving hosting files from: public
+[info] +  hosting[yune-manup]: Local server: http://localhost:5005
+[debug] [2018-12-27T07:36:50.439Z] Error: write after end
+    at write_ (_http_outgoing.js:622:15)
+    at ServerResponse.write (_http_outgoing.js:617:10)
+    at ReadStream.ondata (_stream_readable.js:639:20)
+    at emitOne (events.js:116:13)
+    at ReadStream.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at ReadStream.Readable.push (_stream_readable.js:208:10)
+    at fs.read (fs.js:2059:12)
+    at FSReqWrap.wrapper [as oncomplete] (fs.js:658:17)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2018-12-27T07:39:03.570Z] ----------------------------------------------------------------------
+[debug] [2018-12-27T07:39:03.578Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\라윤혜\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-12-27T07:39:03.580Z] CLI Version:   4.2.1
+[debug] [2018-12-27T07:39:03.580Z] Platform:      win32
+[debug] [2018-12-27T07:39:03.580Z] Node Version:  v8.12.0
+[debug] [2018-12-27T07:39:03.587Z] Time:          Thu Dec 27 2018 16:39:03 GMT+0900 (대한민국 표준시)
+[debug] [2018-12-27T07:39:03.587Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-12-27T07:39:03.637Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-12-27T07:39:03.640Z] > authorizing via signed-in user
+[debug] [2018-12-27T07:39:03.648Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-12-27T07:39:03.649Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+
+[debug] [2018-12-27T07:39:04.441Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-27T07:39:04.464Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/yune-manup  
+ 
+[debug] [2018-12-27T07:39:05.629Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-27T07:39:05.633Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/yune-manup  
+ 
+[debug] [2018-12-27T07:39:07.023Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\라윤혜\Desktop\fbroot\manup'...
+[info] 
+[debug] [2018-12-27T07:39:07.030Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/27826447342/clients/_:getWebAppConfig  
+ 
+[debug] [2018-12-27T07:39:07.950Z] <<< HTTP RESPONSE 200
+[warn] !  hosting: Port 5000 is not available. Trying another port...
+[info] i  hosting[yune-manup]: Serving hosting files from: public
+[info] +  hosting[yune-manup]: Local server: http://localhost:5005
+[debug] [2018-12-27T07:55:47.962Z] Error: write after end
+    at write_ (_http_outgoing.js:622:15)
+    at ServerResponse.write (_http_outgoing.js:617:10)
+    at ReadStream.ondata (_stream_readable.js:639:20)
+    at emitOne (events.js:116:13)
+    at ReadStream.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at ReadStream.Readable.push (_stream_readable.js:208:10)
+    at fs.read (fs.js:2059:12)
+    at FSReqWrap.wrapper [as oncomplete] (fs.js:658:17)
+[error] 
+[error] Error: An unexpected error has occurred.

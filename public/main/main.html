@@ -8,7 +8,7 @@
     <meta name="author" content="사이트주소를 적는 부분입니다." />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
-    <title>부트스트랩</title>
+    <title>Man up</title>
     <!---<link rel="stylesheet" href="../assets/css/reset.css" />-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -37,13 +37,13 @@
             </a>
         </div>
     </div> -->
-    <div class="container-fluid header">
-        <div class="container top clear">
+    <div class="header">
+        <div class="top">
             <ul class="gnb">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Videos</a></li>
-                <li><a href="#">Synopsis</a></li>
-                <li><a href="#">Cast &amp; Filmmakers</a></li>
+                <li ><a href="#">Home</a></li>
+                <li ><a href="#">Videos</a></li>
+                <li ><a href="#">Synopsis</a></li>
+                <li><a href="#">Cast</a></li>
                 <li><a href="#">Gallery</a></li>
                 <li><a href="#">Music</a></li>
             </ul>
@@ -62,21 +62,26 @@
     </div>
 
 
-    <div class="main-banner pages" id="#page1">
+    <div class="main-banner page" id="#page1">
 
         <div class="full-banner">
         </div>
 
         <div class="main-content" id="main_core">
-            <div class="pro">
-                <h2 class="pro_ko">"올해 최고의 로맨틱 코미디"</h2>
-                <h2 clss="pro_eng">"Best romantic comedy movie this year"</h2>
+            <div class="pro" id="pro">
+                <h2 class="pro_txt pro_ko">"올해 최고의 로맨틱 코미디"</h2>
+                <h2 class="pro_txt pro_eng">"Best romantic comedy movie this year"</h2>
+                <h2 class="pro_txt pro_ko">"런던시계탑 밑에서 사랑을 찾을 확률은 얼마나 될까요?"</h2>
+                <h2 class="pro_txt pro_eng">"FROM THE PRODUCER OF 'SHAUN OF THE DEAD, HOT FUZZ & PAUL'"</h2>
+                <h2 class="pro_txt pro_ko">데이트 상대가 없다구요? 하나 훔치세요!</h2>
+                <h2 class="pro_txt pro_eng">IF YOU CAN'T GET A DATE.. JUST STEAL ONE</h2>
+                <h2 class="pro_txt pro_eng">"SIMON PEGG AND LAKE BELL ARE HILARIOUS AND HEARWARMING!"</h2>
             </div>
 
             <div class="actor">
-                <p>Lake Bell</p>
+                <p>Lake <span>Bell</span></p>
                 <p>Simon
-                    Pegg</p>
+                    <span>Pegg</span></p>
             </div>
 
             <h1 class="te">
@@ -87,13 +92,15 @@
             </h2>
         </div>
 
-        <div class="audio">
+        <div class="audiobox clear">
 
-            <p class="audio_control"><i class="fa fa-music" aria-hidden="true"></i></p>
-            <audio controls autoplay loop preload>
+            <i class="fa fa-music adbox_bt" aria-hidden="true" id="play" onclick="play()"></i>
+          <i class="fa fa-facebook adbox_bt" aria-hidden="true"></i>
+          <i class="fa fa-instagram adbox_bt" aria-hidden="true"></i>
+          <i class="fa fa-twitter adbox_bt" aria-hidden="true"></i>
+            <audio id="audio" loop>
                 <source src="../media/The Jim Jones Revue_Shoot First.mp3" type="audio/mpeg" />
-                <!-- <source src="track.mp3" type="audio/mpeg" /> -->
-                <!-- Your browser does not support the audio element. -->
+                <source src="../media/The Jim Jones Revue_Shoot First (online-audio-converter.com).ogg" type="audio/ogg">
             </audio>
         </div>
     </div>
@@ -230,7 +237,7 @@
         </div>
 
         <!------------------>
-        <div class="container gallery page">
+        <div class="container-fluid gallery page">
             <h2 class="title te">Gallery</h2>
             <div id="columns">
                 <figure>
@@ -295,10 +302,11 @@
 
 
         </div>
+    </div>
 
         <!------------------------->
         <div class="music page">
-            <h2 class="title te">Music</h2>
+            <h2 class="title te">Music</h2>  
             <div class="music_box">
                 <table>
                     <tr>
@@ -306,7 +314,7 @@
                         <td class="mb_txt">Cool Like Me <br />
                             <span>frYars</span></td>
                         <td class="mb_time">3:38</td>
-                        <td class="mb_play"><a href=""> <span><i class="fa fa-youtube-play" aria-hidden="true"></i></span>
+                        <td class="mb_play"><a href="https://youtu.be/lHZy9pynB18?list=PLv5GsyHk-X964ZehYinEdJZLM3lmmoh7t" target="_blank"> <span><i class="fa fa-youtube-play" aria-hidden="true"></i></span>
                                 Listen now
                             </a></td>
                     </tr>
@@ -316,7 +324,7 @@
                         <td class="mb_txt">Upside Down <br />
                             <span>Paloma Faith</span></td>
                         <td class="mb_time">3:11</td>
-                        <td class="mb_play"><a href=""> <span><i class="fa fa-youtube-play" aria-hidden="true"></i></span>
+                        <td class="mb_play"><a href="https://youtu.be/lDeB5sDealI?list=PLv5GsyHk-X964ZehYinEdJZLM3lmmoh7t" target="_blank"> <span><i class="fa fa-youtube-play" aria-hidden="true"></i></span>
                                 Listen now
                             </a></td>
                     </tr>
@@ -326,7 +334,7 @@
                         <td class="mb_txt">Love Shack <br />
                             <span>The B-52's</span></td>
                         <td class="mb_time">5:23</td>
-                        <td class="mb_play"><a href=""> <span><i class="fa fa-youtube-play" aria-hidden="true"></i></span>
+                        <td class="mb_play"><a href="https://youtu.be/9SOryJvTAGs" target="_blank"> <span><i class="fa fa-youtube-play" aria-hidden="true"></i></span>
                                 Listen now
                             </a></td>
                     </tr>
@@ -335,7 +343,7 @@
                         <td class="mb_txt">Three Hearts<br />
                             <span>Alex Clare</span></td>
                         <td class="mb_time">4:24</td>
-                        <td class="mb_play"><a href=""> <span><i class="fa fa-youtube-play" aria-hidden="true"></i></span>
+                        <td class="mb_play"><a href="https://youtu.be/m7LxRXJiuV0" target="_blank"> <span><i class="fa fa-youtube-play" aria-hidden="true"></i></span>
                                 Listen now
                             </a></td>
                     </tr>
@@ -344,7 +352,7 @@
                         <td class="mb_txt">Shoot First <br />
                             <span> The Jom Jones Revue</span></td>
                         <td class="mb_time">2:58</td>
-                        <td class="mb_play"><a href=""> <span><i class="fa fa-youtube-play" aria-hidden="true"></i></span>
+                        <td class="mb_play"><a href="https://youtu.be/1k_cd44iBuU" target="_blank"> <span><i class="fa fa-youtube-play" aria-hidden="true"></i></span>
                                 Listen now
                             </a></td>
                     </tr>
@@ -354,7 +362,7 @@
                         <td class="mb_txt">She Wanna Do It <br />
                             <span>Phil Friendly & Albert Lee </span></td>
                         <td class="mb_time">2:42</td>
-                        <td class="mb_play"><a href=""> <span><i class="fa fa-youtube-play" aria-hidden="true"></i></span>
+                        <td class="mb_play"><a href="https://youtu.be/Oi1Za3Pyu7c" target="_blank"> <span><i class="fa fa-youtube-play" aria-hidden="true"></i></span>
                                 Listen now
                             </a></td>
                     </tr>
@@ -363,7 +371,7 @@
                         <td class="mb_txt">Hercules <br />
                             <span>Aaron Neville</span></td>
                         <td class="mb_time">4:11</td>
-                        <td class="mb_play"><a href=""> <span><i class="fa fa-youtube-play" aria-hidden="true"></i></span>
+                        <td class="mb_play"><a href="https://youtu.be/NGGRi2CEFu8" target="_blank"> <span><i class="fa fa-youtube-play" aria-hidden="true"></i></span>
                                 Listen now
                             </a></td>
                     </tr>
@@ -372,7 +380,7 @@
                         <td class="mb_txt">Feels So Good<br />
                             <span>Jody Reynolds</span></td>
                         <td class="mb_time">3:08</td>
-                        <td class="mb_play"><a href=""> <span><i class="fa fa-youtube-play" aria-hidden="true"></i></span>
+                        <td class="mb_play"><a href="" target="_blank"> <span><i class="fa fa-youtube-play" aria-hidden="true"></i></span>
                                 Listen now
                             </a></td>
                     </tr>
@@ -381,7 +389,7 @@
                         <td class="mb_txt">Move Closer <br />
                             <span>Phyllis Nelson</span></td>
                         <td class="mb_time">4:37</td>
-                        <td class="mb_play"><a href=""> <span><i class="fa fa-youtube-play" aria-hidden="true"></i></span>
+                        <td class="mb_play"><a href="https://youtu.be/isLROpuSV0w" target="_blank"> <span><i class="fa fa-youtube-play" aria-hidden="true"></i></span>
                                 Listen now
                             </a></td>
                     </tr>
@@ -391,7 +399,7 @@
                             <span>Phil Friendly & Albert Lee
                             </span></td>
                         <td class="mb_time">2:22</td>
-                        <td class="mb_play"><a href=""> <span><i class="fa fa-youtube-play" aria-hidden="true"></i></span>
+                        <td class="mb_play"><a href="https://youtu.be/WlsSIapXOh4" target="_blank"> <span><i class="fa fa-youtube-play" aria-hidden="true"></i></span>
                                 Listen now
                             </a></td>
                     </tr>
@@ -403,7 +411,7 @@
 
                             </span></td>
                         <td class="mb_time">2:37</td>
-                        <td class="mb_play"><a href=""> <span><i class="fa fa-youtube-play" aria-hidden="true"></i></span>
+                        <td class="mb_play"><a href="https://youtu.be/20S_kwNb4rg" target="_blank"> <span><i class="fa fa-youtube-play" aria-hidden="true"></i></span>
                                 Listen now
                             </a></td>
                     </tr>
@@ -414,7 +422,7 @@
                             <span> Jungle
                             </span></td>
                         <td class="mb_time">2:59</td>
-                        <td class="mb_play"><a href=""> <span><i class="fa fa-youtube-play" aria-hidden="true"></i></span>
+                        <td class="mb_play"><a href="https://youtu.be/BcsfftwLUf0" target="_blank"> <span><i class="fa fa-youtube-play" aria-hidden="true"></i></span>
                                 Listen now
                             </a></td>
                     </tr>
@@ -424,7 +432,7 @@
                             <span>Ed Thomas
                             </span></td>
                         <td class="mb_time">3:52</td>
-                        <td class="mb_play"><a href=""> <span><i class="fa fa-youtube-play" aria-hidden="true"></i></span>
+                        <td class="mb_play"><a href="https://youtu.be/wvefQH6yhuk" target="_blank"> <span><i class="fa fa-youtube-play" aria-hidden="true"></i></span>
                                 Listen now
                             </a></td>
                     </tr>
@@ -434,7 +442,7 @@
                             <span> Soul Patrol
                             </span></td>
                         <td class="mb_time">2:29</td>
-                        <td class="mb_play"><a href=""> <span><i class="fa fa-youtube-play" aria-hidden="true"></i></span>
+                        <td class="mb_play"><a href="https://youtu.be/cyZxMsm7Sf8" target="_blank"> <span><i class="fa fa-youtube-play" aria-hidden="true"></i></span>
                                 Listen now
                             </a></td>
                     </tr>
@@ -444,7 +452,7 @@
                             <span>Maverick Sabre
                             </span></td>
                         <td class="mb_time">4:00</td>
-                        <td class="mb_play"><a href=""> <span><i class="fa fa-youtube-play" aria-hidden="true"></i></span>
+                        <td class="mb_play"><a href="https://youtu.be/GZNtticFI60" target="_blank"> <span><i class="fa fa-youtube-play" aria-hidden="true"></i></span>
                                 Listen now
                             </a></td>
                     </tr>
@@ -454,7 +462,7 @@
                             <span>Duran Duran
                             </span></td>
                         <td class="mb_time">5:30</td>
-                        <td class="mb_play"><a href=""> <span><i class="fa fa-youtube-play" aria-hidden="true"></i></span>
+                        <td class="mb_play"><a href="https://youtu.be/Eotbo-DsPTo" target="_blank"> <span><i class="fa fa-youtube-play" aria-hidden="true"></i></span>
                                 Listen now
                             </a></td>
                     </tr>
@@ -465,7 +473,7 @@
                             <span>Maxence Cyrin 
                             </span></td>
                         <td class="mb_time">2:48</td>
-                        <td class="mb_play"><a href=""> <span><i class="fa fa-youtube-play" aria-hidden="true"></i></span>
+                        <td class="mb_play"><a href="https://youtu.be/Iyw2jn2lPUE" target="_blank"> <span><i class="fa fa-youtube-play" aria-hidden="true"></i></span>
                                 Listen now
                             </a></td>
                     </tr>
@@ -475,7 +483,7 @@
                             <span> George Thorogood & The Destroyers 
                             </span></td>
                         <td class="mb_time">4:50</td>
-                        <td class="mb_play"><a href=""> <span><i class="fa fa-youtube-play" aria-hidden="true"></i></span>
+                        <td class="mb_play"><a href="https://youtu.be/dt_8aDOJvtM" target="_blank"> <span><i class="fa fa-youtube-play" aria-hidden="true"></i></span>
                                 Listen now
                             </a></td>
                     </tr>
@@ -485,7 +493,7 @@
                             <span> Whitesnake 
                             </span></td>
                         <td class="mb_time">4:35</td>
-                        <td class="mb_play"><a href=""> <span><i class="fa fa-youtube-play" aria-hidden="true"></i></span>
+                        <td class="mb_play"><a href="https://youtu.be/WyF8RHM1OCg" target="_blank"> <span><i class="fa fa-youtube-play" aria-hidden="true"></i></span>
                                 Listen now
                             </a></td>
                     </tr>
@@ -495,7 +503,7 @@
                             <span> Elbow
                             </span></td>
                         <td class="mb_time">5:56</td>
-                        <td class="mb_play"><a href=""> <span><i class="fa fa-youtube-play" aria-hidden="true"></i></span>
+                        <td class="mb_play"><a href="https://youtu.be/SPVjY34uwuY" target="_blank"> <span><i class="fa fa-youtube-play" aria-hidden="true"></i></span>
                                 Listen now
                             </a></td>
                     </tr>
@@ -505,179 +513,25 @@
             </div>
         </div>
 
-        <div class="row site-info">
-            <div class="col-md-4 col-sm-4 icon-box">
-                <div class="block">
-                    <span class="glyphicon glyphicon-globe"></span>
-                    <h4>Bootstrap3</h4>
-                    <div class="block-txt">
-                        <p>
-                            <span>Shield Theme is powered by Bootstrap 3.</span>
-                            <span> The incredible Mobile First Framework is the best option to run your website</span>
-                        </p>
-                        <a href="#" class="site-btn">Read More</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 col-sm-4 icon-box">
-                <div class="block">
-                    <span class="glyphicon glyphicon-eye-open"></span>
-                    <h4>RETINA READY</h4>
-                    <div class="block-txt">
-                        <p>
-                            <span>You can use this theme with your iPhone, iPad or MacBook Pro.</span>
-                            <span>This theme is retina ready and that is awesome.</span>
-                        </p>
-                        <a href="#" class="site-btn">Read More</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 col-sm-4 icon-box">
-                <div class="block">
-                    <span class="glyphicon glyphicon-heart"></span>
-                    <h4>CRAFTED WITH LOVE</h4>
-                    <div class="block-txt">
-                        <p>
-                            <span>We don't make sites, we craft themes with love passion. That is our most valued
-                                secret.</span>
-                            <span>We only do thing that we love.</span>
-                        </p>
-                        <a href="#" class="site-btn">Read More</a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-
-        <div class="container about">
-            <h3 class="title">A LITTLE ABOUT OUR AGENCY</h3>
-            <hr class="line" />
-            <div class="row">
-                <div class="col-md-6 col-sm-6">
-                    <p>
-                        We believe ideas come from everyone, everywhere. In fact, at BlackTie, everyone within our
-                        agency walls is a designer in their own right. And there are a few principles we believe?and we
-                        believe everyone should believe?about our design craft. These truths drive us, motivate us, and
-                        ultimately help us redefine the power of design. We’re big believers in doing right by our
-                        neighbors. After all, we grew up in the Twin Cities and we believe this place has much to
-                        offer. So we do what we can to support the community we love.
-                    </p>
-                </div>
-                <div class="col-md-6 col-sm-6">
-                    <p>
-                        Over the past four years, we’ve provided more than $1 million in combined cash and pro bono
-                        support to Way to Grow, an early childhood education and nonprofit organization. Other
-                        community giving involvement throughout our agency history includes pro bono work for more than
-                        13 organizations, direct giving, a scholarship program through the Minneapolis College of Art &
-                        Design, board memberships, and ongoing participation in the Keystone Club, which gives five
-                        percent of our company’s earnings back to the community each year.
-                    </p>
-                </div>
-
-            </div>
-        </div>
-
-
-        <div class="row design bg content">
-            <h3 class="title">Design expand boundaries</h3>
-            <hr class="line" />
-            <p><span>To achieve real change, we have to expand boundaries.</span>
-                <span>Because the Wild West of what-could-be is unexplored but rife with opportunity.</span></p>
-        </div>
-
-
-        <div class="container one">
-            <h3 class="title">Design expand boundaries</h3>
-            <hr class="line" />
-            <div class="one-txt">
-                <p>
-                    Employees and consumers. Two halves of a brand’s entirety, the whole of a brand’s audience.
-                    Sometimes these two halves have very different viewpoints, creating a weak spot in the brand story.
-                    Weakness tarnishes credibility. Brands that aren’t credible aren’t viable. We squash weakness by
-                    designing the whole brand story.
-                    It’s crafted around the truism held by employees and consumers to create an experience that
-                    connects from the inside out.
-                    By being true to the brand we represent, we elevate the audiences’ relationship to it. Like becomes
-                    love becomes a passion.
-                    Passion becomes advocacy. And we see the brand blossom from within, creating a whole story the
-                    audience embraces.
-                    That’s when the brand can truly flex its muscles.
-
-                </p>
-                <a href="#" class="one-btn">Product Downlad</a>
-            </div>
-            <div class="one-img">
-                <img src="../assets/images/iphone.png" alt="phone" />
-            </div>
-        </div>
-
-        <div class="row design-two bg content">
-            <h3 class="title">DESIGN IS AN INTERACTION</h3>
-            <hr class="line" />
-            <p>
-                <span>To develop a deeper and more meaningful connection with.</span>
-                <span>consumers, we believe design must invite them to take part in the conversation.</span>
-            </p>
-        </div>
-
-
-
-
-
-        <div class="row design-three bg content">
-            <h3 class="title">
-                DESIGN SOLVE PROBLEMS
-            </h3>
-            <hr class="line" />
-            <p>
-                <span>From the purely practical to the richly philosophical,</span>
-                <span> design is the solution to a host of challenges.</span>
-            </p>
-        </div>
-
-        <div class="container gallery">
-            <h3 class="title">
-                DESIGN SOLVE PROBLEMS
-            </h3>
-            <hr class="line" />
-            <div class="row">
-                <div class="col-md-4 col-sm-6 col-xs-6 ga-xs">
-                    <img src="../assets/images/portfolio/folio01.jpg" alt="img" class="img-responsive" />
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-6 ga-xs">
-                    <img src="../assets/images/portfolio/folio02.jpg" alt="img" class="img-responsive" />
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-6 ga-xs">
-                    <img src="../assets/images/portfolio/folio03.jpg" alt="img" class="img-responsive" />
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-6 ga-xs">
-                    <img src="../assets/images/portfolio/folio04.jpg" alt="img" class="img-responsive" />
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-6 ga-xs">
-                    <img src="../assets/images/portfolio/folio05.jpg" alt="img" class="img-responsive" />
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-6 ga-xs">
-                    <img src="../assets/images/portfolio/folio06.jpg" alt="img" class="img-responsive" />
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-
-
-    <div class="container-fluid footer content bg">
-        <h3 class="title">
-            DESIGN SOLVE PROBLEMS
-        </h3>
-        <hr class="line" />
-        <p>
-            <span>From the purely practical to the richly philosophical,</span>
-            <span> design is the solution to a host of challenges.</span>
-        </p>
+    <div class="container-fluid footer">
+       <ul class="foot_mark clear">
+           <li><img src="../img/footer/bbc.jpg"></li>
+           <li><img src="../img/footer/bigtalk.jpg"></li>
+       </ul>
+       <ul class="foot_tx clear" >
+           <li><a href="#">PRIVACY POLICY</a></li>
+           <li><a href="#">FEEDBACK</a></li>
+           <li><a href="#">TERMS & CONDITIONS</a></li>
+           <li><a href="#">MPAA.ORG</a></li>
+           <li><a href="#">FLIMRATINGS.COM</a></li>
+       </ul>
+       <ul class="foot_2tx row">
+           <li class="col-md-6 col-sm-6">ⓒMOVIE PLATFORM . 2018 POWSTER</li>
+           <li class="col-md-6 col-sm-6">ⓒ2018 BBC FLIMS.ALL RIGHTS RESERVED.</li>
+       </ul>
+       <!-- <div class="foot_last"> -->
+           <p>Man up(2015) official website made by Yune Ra</p>
+       <!-- </div> -->
     </div>
 
 

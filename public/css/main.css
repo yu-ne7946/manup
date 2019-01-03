@@ -1,40 +1,43 @@
 html{font-size:100%;}
-/* .gnb{ padding:0.7rem 0;}
-.gnb-user{text-align:right;}
-.gnb-user a{display:inline-block; color:#999; font-size:0.875rem;}
-.gnb-user a.sign{margin-right:1rem;}
-.gnb-user a span{margin-right:0.5rem;} */
-.header{width:100%; color:#fff; font-size:1rem; position:fixed;
+.header{ width:100%; color:#fff; font-size:1rem; position:fixed;
     z-index:99999; font-family: 'Signika', sans-serif;}
 /* .dn_bg {background-color:rgba(221,199,240,0.9); color:#000; box-shadow:0 5px 5px rgba(0,0,0,0.4);} */
 .top{ margin: auto; padding:10px 0;}
-.gnb li{display:inline-block; width:16%; text-align:center; font-size:1rem;}
+.gnb li{display:inline-block; width:16%; text-align:center; font-size:1rem; color:#fff;}
 .gnb li a:hover{text-decoration:none; color:#d91023;}
+.gnb li a:active{text-decoration:none; color:#d91023;}
 .gnb_color{background-color:rgba(255,233,210,0.9);color:#010201;}
-/*navbar 모서리부분과 margin-bottom 부분제어*/
+
+/*navbar 모서리부분과 margin-bottom 부분제어
 .navbar{border-radius:0; margin-bottom:0; background-color:transparent;}
 .navbar-inverse .navbar-brand{color:#ed8181; font-size:2rem;
                               padding:0.5rem 1.2rem; border-color:none;
-} /*부트스트랩 아이콘 색 바꾸기 */
+} /*부트스트랩 아이콘 색 바꾸기
 .navbar-collapse{border-color:none;}
+*/
 
 .main-banner{width:100%; height:100%;}
 
 .full-banner{width:100%; height:100%;  position:absolute; top:0; left:0; overflow:hidden; z-index:11;}
 
-.main-content{width:40%; font-family:'Signika', sans-serif; color:#fff; position:absolute;
+.main-content{width:50%; font-family:'Signika', sans-serif; color:#fff; position:absolute;
     top:50%; left:50%; transform:translate(-50%,-50%); z-index:22; text-align:center;}
 
-.main-content .pro{padding-bottom:10%; }
-.main-content .pro h3.pro_ko{font-family: 'Nanum Brush Script', cursive !important;}
-.main-content h3:nth-child(2){font-family: 'Crimson Text', serif !important;}
+.main-content .pro{padding-bottom:20%; width:100%; position:relative; }
+.main-content .pro h2{width:100%;position:absolute; top:50px; left:50%; transform:translateX(-50%); opacity:0;}
+.main-content .pro .pro_ko{font-family: 'Nanum Brush Script', cursive !important;}
+.main-content .pro .pro_eng{font-family: 'Crimson Text', serif !important;}
 
 .main-content h1{font-size:10vw; color:#d91023;}
 .main-content .actor p{display:inline-block; color:#fff; font-size:1.3rem; font-weight:400;}
+.main-content .actor p span{font-weight:bold;}
 .actor p:first-child{margin-right:10%;}
 
-.audio{position:fixed; z-index:9999; right:1%; bottom:1%; }
-.audio p{color:#fff; font-size:1.5rem; cursor:pointer; }
+.audiobox{position:fixed; z-index:9999; right:1%; bottom:1%; }
+.audiobox .adbox_bt{cursor:pointer; font-size:1.3rem; color:#fff;
+margin-right:0.3125rem; }
+.adbox_bt:last-child{margin-right:0;}
+
 
 
 /*section*/
@@ -103,9 +106,9 @@ html{font-size:100%;}
   /*********************/
   /**music**/
   /**********************/
-  .music{padding:3% 0;background-image:url("../img/bigben.jpg"); }
+  .music{padding:3% 0;background-image:url("../img/bigben3.png"); background-color:#567282; background-size:cover; }
   .music h2{font-size:4rem; color:#d91023; text-align:center; padding-bottom:2rem; }
-  .music_box{width:60%; height:30rem; overflow-y:scroll; border-radius: 10px; margin:auto; background-color:rgb(32, 32, 32,0.8); color:#f3e8dc;
+  .music_box{width:60%; height:80%; overflow-y:scroll; border-radius: 10px; margin:auto; background-color:rgb(32, 32, 32,0.8); color:#f3e8dc;
              }
   .music_box tr{border-bottom:1px solid #000;}
   .music_box td{ text-align:center;  font-size:1rem; padding:1% 0;}
@@ -119,6 +122,23 @@ html{font-size:100%;}
   .mb_play a:hover{color:#d91023; text-decoration:none;}
 
 
+/********************************/
+/**footer**/
+/******************************/
+.footer{background-color:#000;color:#666; padding:2% 0; }
+.foot_mark{width:30%; margin:auto;}
+.foot_mark li{float:left; width:40%; margin-right:20%;}
+.foot_mark li:last-child{margin-right:0;}
+.foot_mark li img{width:100%;}
+
+.foot_tx{width:70%; margin:auto; padding:2% 0;}
+.foot_tx li{float:left; width:20%; text-align:center; font-size:0.8rem; font-weight:bold; color:#808080;}
+
+.foot_2tx{padding-bottom:2%;}
+.foot_2tx li{text-align:center; font-size:0.8rem; color:#4d4b4b;}
+
+/* .foot_last{width:70%; margin:auto; text-align:center;} */
+.footer p{color:#4b4b4b; text-align:center; font-size:0.8rem;}
 
   .banner{position:relative;}
 .banner:before{content:""; display:block; padding-top:45%;/*임의의 높이값*/
@@ -191,17 +211,55 @@ html{font-size:100%;}
 .gallery .row div:first-child, .gallery .row div:nth-child(2), .gallery .row div:nth-child(3) {margin-bottom:2rem;}
 
 /*footer*/
-.footer{background-image: url("assets/images/bg/divider4.jpg");text-align:center; padding:4rem 0; background-attachment:fixed;}
+/* .footer{background-image: url("assets/images/bg/divider4.jpg");text-align:center; padding:4rem 0; background-attachment:fixed;} */
 
-@media screen and (max-width:992px){.caption h3 span{display:block;}
-                                    .block-txt .site-btn{width:65%;} 
-                                    .content p span{display:block;}
-                                    .one-txt .one-btn{width:25%;}
-                                    .cast .row >div:first-child, .cast .row >div:nth-child(2){margin-bottom:3rem;}
-                                    .gallery .row div:nth-child(4) {margin-bottom:2rem;}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+  .top .row{margin-right:0; margin-left:0;}
+  .cast .row >div:first-child, .cast .row >div:nth-child(2){margin-bottom:3rem;}
+.gallery .row div:nth-child(4) {margin-bottom:2rem;}
+
 }
 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  html{font-size:87.5%;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {}
+
+
+
+
+
+
+
+
+
+
+
+/*
+@media screen and (max-width:1260px){}
+
+@media screen and (max-width:992px){                             
+                                    .cast .row >div:first-child, .cast .row >div:nth-child(2){margin-bottom:3rem;}
+                                    .gallery .row div:nth-child(4) {margin-bottom:2rem;}
+
+}
+@media (min-width: 768px){}
 @media screen and (max-width:768px){html{font-size:87.5%;}
+ 
     .navbar-inverse .navbar-brand {padding: 0.9rem 1.2rem;}
     .caption >span{font-size:3rem; }
     .caption h3{font-size:1.7rem; }
@@ -242,3 +300,6 @@ html{font-size:100%;}
                                   .gallery .row div:nth-child(5){margin-bottom:2rem;}
                                   .footer p span{display:inline;}
 }
+
+@media screen and (max-width:400px){}
+*/ 

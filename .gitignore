@@ -10,3 +10,6 @@
 .runtimeconfig.json
 .firebase/
 *.psd
+*.mp3
+*.ogg
+

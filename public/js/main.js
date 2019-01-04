@@ -71,15 +71,24 @@ var depth=3;
 
 
 /***********music ************/
-window.onload = function () {
- $("#play").click();
-}
 // var x = document.getElementById("audio");
 // function audioLoop() { 
 // x.loop = true;
 // x.load();} 
 
-function play() {
+var audio = document.getElementById('audio');
+$("#play").click(function(){
+    if(audio.paused) {
+        audio.play();
+        $("#play").css("color","#d91023");
+    }
+    else {
+        audio.pause();
+        $("#play").css("color","#fff");
+    }
+}).trigger("click");
+
+/* function play() {
     var audio = document.getElementById('audio');
     // audio.loop = true;
     if (audio.paused) {
@@ -96,7 +105,7 @@ function play() {
         // $('#play').addClass('glyphicon-play-circle')
         // $('#play').removeClass('glyphicon-pause')
     }
-}
+} */
 
 /******banner scroll ************/
 var pages =[]
@@ -111,7 +120,7 @@ $(window).resize(function(){
 $(".gnb").children("li").click(function(){
     now = $(this).index();
     console.log(pages[now]);
-    $("html").stop().animate({"scrolltop":pages[now]+"px"},300);
+    $("html, body").stop().animate({"scrollTop":pages[now]+"px"},300);
 }); 
 
 $(".gnb_sub").children("li").click(function(){

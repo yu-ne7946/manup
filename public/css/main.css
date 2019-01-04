@@ -1,11 +1,13 @@
 html{font-size:100%;}
 .header{ width:100%; color:#fff; font-size:1rem; position:fixed;
-    z-index:99999; font-family: 'Signika', sans-serif;}
+    z-index:99999; font-family: 'Signika', sans-serif; border-bottom:1px solid rgba(255,255,255, .2)}
 /* .dn_bg {background-color:rgba(221,199,240,0.9); color:#000; box-shadow:0 5px 5px rgba(0,0,0,0.4);} */
 .top{ margin: auto; padding:10px 0;}
-.gnb li{display:inline-block; width:16%; text-align:center; font-size:1rem;}
+.gnb li{display:inline-block; width:16%; text-align:center; font-size:1rem; cursor:pointer;}
+.gnb li a:link{text-decoration:none; color:inherit;}
+.gnb li a:visited{text-decoration:none; color:inherit;}
 .gnb li a:hover{text-decoration:none; color:#d91023;}
-.gnb li a:active{text-decoration:none; color:#d91023;}
+.gnb li a:active{text-decoration:none; color:inherit;}
 .gnb_color{ background-color:rgba(243,232,220,0.9);color:#4c6b7c;}
 .gnb_mo{width:100%; display:none;}
 /* .gnb_mo li:first-child{width:25%; float:left;} */
@@ -79,7 +81,8 @@ margin-right:0.3125rem; }
 /*************************/
 /**synopsis*/
 /**************************/
-.syno{background-color:#567282; padding:3% 0; height:100%;}
+.syno{background-color:#567282; padding:3% 0; height:100%; width:100%;}
+.syno > div{margin:auto;}
 .syno .title-block{text-align:justify;}
 .syno h2{font-size:3rem; color:#d91023; padding-bottom:1rem;}
 .syno p{color:#f3e8dc; font-family: 'Signika', sans-serif; }
@@ -306,36 +309,35 @@ margin-right:0.3125rem; }
    .one-txt .one-btn{width:35%;}
    .cast .row{width:90%; margin:auto;}
    .cast img{max-width:50%;}
-   .syno img{max-width:60%; margin:auto;}
-   .syno >div{width:90%; margin:auto;}
    .gallery .row{width:90%; margin:auto;}
+   .main-content{width:100%;}
+   .main-content h1{font-size:26vw;}
+  .main-content > h2{font-size:8vw;}
+
 }
-@media screen and (max-width:480px){html{font-size:75%;}
-                       .gnb{display:none;}
-
-                       .gnb_mo{display:block;}
-
-
-
-                                 .caption >span{font-size:2.5rem; }
-                                  .caption h3{font-size:1.4rem; }
-                                  .block-txt{width:90%; margin:auto;}
-                                  .about >div{width:96%;}
-                                  .content p{padding:0 2rem;}
-                                  .one-txt .one-btn{width:45%;}
-                                  .one-img img{max-width:70%;}
-                                  .design-two p span{display:inline;}
-                                  .cast .row{width:96%;}
-                                  .cast img{max-width:50%;}
-                                  .cast .row .xs{width:100%; width:100%; float:none;}
-                                  .cast .row >div:nth-child(3){margin-bottom:3rem;}
-                                  .syno img{max-width:70%;}
-                                  .syno >div{width:96%;}
-                                  .design-three p span{display:inline;}
-                                  .gallery .row{width:96%;}
-                                  .gallery .row div{width:100%; float:none;}
-                                  .gallery .row div:nth-child(5){margin-bottom:2rem;}
-                                  .footer p span{display:inline;}
+@media screen and (max-width:480px){
+  html{font-size:75%;}
+  .gnb{display:none;}
+  .gnb_mo{display:block;}
+  .caption >span{font-size:2.5rem; }
+  .caption h3{font-size:1.4rem; }
+  .block-txt{width:90%; margin:auto;}
+  .about >div{width:96%;}
+  .content p{padding:0 2rem;}
+  .one-txt .one-btn{width:45%;}
+  .one-img img{max-width:70%;}
+  .design-two p span{display:inline;}
+  .cast .row{width:96%;}
+  .cast img{max-width:50%;}
+  .cast .row .xs{width:100%; width:100%; float:none;}
+  .cast .row >div:nth-child(3){margin-bottom:3rem;}
+  .design-three p span{display:inline;}
+  .gallery .row{width:96%;}
+  .gallery .row div{width:100%; float:none;}
+  .gallery .row div:nth-child(5){margin-bottom:2rem;}
+  .footer p span{display:inline;}
+  .main-content h1{font-size:32vw;}
+  .main-content > h2{font-size:10vw;}
 }
 
 @media screen and (max-width:400px){}

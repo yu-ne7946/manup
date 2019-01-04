@@ -22,10 +22,7 @@ $('.full-banner').vegas({
     overlay: '../css/overlays/06.png',
 });
 
-/**music control */
-// $("#audio_control").click(function(){
-//     Audio.pause();
-// })
+
 
 /**scroll */
 $(window).scroll(function(){
@@ -41,6 +38,12 @@ $(window).scroll(function(){
         $(".header").stop().animate({"top":"0px"},500);
     }
 });
+$(".fa-bars").click(function () {
+    $(".gnb_sub").stop().slideToggle(100);
+});
+
+
+
 
 /**banner text */
  var interval;
@@ -57,9 +60,9 @@ var depth=3;
  function banFade(){
    $("#pro > h2").eq(n).animate({"opacity":1,"top": 0},1500).delay(2000)
 
-   $("#pro > h2").eq(n).animate({"opacity":0,"top": -50},1500);
+   $("#pro > h2").eq(n).animate({"opacity":0,"top": "-40%"},1500);
     if(n==6) {  n=-1; 
-        $("#pro >h2").animate({"top":50},100);
+        $("#pro >h2").animate({"top":"40%"},100);
    }
      n++;
 
@@ -110,3 +113,10 @@ $(".gnb").children("li").click(function(){
     console.log(pages[now]);
     $("html").stop().animate({"scrolltop":pages[now]+"px"},300);
 }); 
+
+$(".gnb_sub").children("li").click(function(){
+    now = $(this).index();
+    $("html, body").stop().animate({"scrollTop":pages[now]+"px"}, 300, function(){
+        $(".gnb_sub").stop().slideUp(100);
+    });
+});

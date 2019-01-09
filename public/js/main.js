@@ -45,7 +45,7 @@ $(".fa-bars").click(function () {
 
 
 
-/**banner text */
+/*banner text */
  var interval;
  var n = 0;
 var depth=3;
@@ -53,28 +53,21 @@ var depth=3;
   banFade();
   interval = setInterval(banFade,5000);
 
-//   function sleep(t){
-//       return new Promise(resolve => setTimeout(resolve,t));
-//   }
+  function banFade(){
+   $(".pro_txt").eq(n).animate({"opacity":1,"top": "-40%"},1500).delay(2000)
 
- function banFade(){
-   $("#pro > h2").eq(n).animate({"opacity":1,"top": 0},1500).delay(2000)
-
-   $("#pro > h2").eq(n).animate({"opacity":0,"top": "-40%"},1500);
+   $(".pro_txt").eq(n).animate({"opacity":0,"top": "-60%"},1500);
     if(n==6) {  n=-1; 
-        $("#pro >h2").animate({"top":"40%"},100);
+        $(".pro_txt").animate({"top":"-23%"},100);
    }
      n++;
 
 };
 
 
-
+/**************************************/
 /***********music ************/
-// var x = document.getElementById("audio");
-// function audioLoop() { 
-// x.loop = true;
-// x.load();} 
+/**************************************/
 
 var audio = document.getElementById('audio');
 $("#play").click(function(){
@@ -84,7 +77,7 @@ $("#play").click(function(){
     }
     else {
         audio.pause();
-        $("#play").css("color","#fff");
+        $("#play").css("color","#333");
     }
 }).trigger("click");
 
@@ -107,7 +100,9 @@ $("#play").click(function(){
     }
 } */
 
+/***********************************/
 /******banner scroll ************/
+/****************************************/
 var pages =[]
 var now = 0;
 $(window).resize(function(){
@@ -129,3 +124,50 @@ $(".gnb_sub").children("li").click(function(){
         $(".gnb_sub").stop().slideUp(100);
     });
 });
+
+
+/********************************/
+/*************syno languae*************/
+/********************************/
+
+var synoN=0;
+$(".syno_lang").click(function(){
+    synoN++;
+    if(synoN %2 !=0){
+        $(".syno_eng").fadeOut(300);
+        $(".syno_ko").fadeIn(300);
+        $(".syno_lang").text("English");
+    }else{
+        $(".syno_ko").fadeOut(300);
+        $(".syno_eng").fadeIn(300);
+        $(".syno_lang").text("Korean");
+    }
+})
+
+
+/********************************/
+/*************Cast language*************/
+/********************************/
+/* $(".cast_lang").click(function(){
+    $(".cast_eng").hide();
+    $(".cast_ko").show();
+
+    if($(".cast_eng").css({"display":"none"})){
+        $(".cast_lang").text("English");
+
+    }
+})
+ */
+var castN=0;
+$(".cast_lang").click(function(){
+    castN++;
+    if(castN % 2 !=0){
+        $(".cast_eng").fadeOut(300);
+        $(".cast_ko").fadeIn(300);
+        $(".cast_lang").text("English");
+    }else{
+        $(".cast_ko").fadeOut(300);
+        $(".cast_eng").fadeIn(300);
+        $(".cast_lang").text("Korean");
+    }
+})

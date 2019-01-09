@@ -16,6 +16,8 @@
 /* font-family: 'Crimson Text', serif; */
 @import url('https://fonts.googleapis.com/css?family=Nanum+Brush+Script');
 /* font-family: 'Nanum Brush Script', cursive; */
+@import url('https://fonts.googleapis.com/css?family=Poor+Story');
+/* font-family: 'Poor Story', cursive; */
 html,body{margin:0; padding:0; font-size: 16px; box-sizing:border-box;  font-family: 'Noto Sans KR', sans-serif; height:100%; font-weight:300; }
 
 

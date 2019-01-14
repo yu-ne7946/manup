@@ -10,7 +10,7 @@ $('.full-banner').vegas({
     valign: 'center',
     transitionDuration: 2000,
      slides: [
-        { src:'../img/divider6.jpg',
+        { src:'../img/mb_back.jpg',
             video: {
                 src: '../media/man2.mp4',
                 loop: true,
@@ -38,7 +38,14 @@ $(window).scroll(function(){
         $(".header").stop().animate({"top":"0px"},500);
     }
 });
+var gnbSub = 0;
 $(".fa-bars").click(function () {
+    gnbSub++;
+    if(gnbSub % 2 != 0){
+        $(".header").css({"border-bottom":"none"})
+    }else{
+        $(".header").css({"border-bottom":"1px solid rgba(255,255,255, .2)"});
+    };
     $(".gnb_sub").stop().slideToggle(100);
 });
 

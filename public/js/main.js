@@ -31,6 +31,7 @@ $(window).scroll(function(){
         if(!$(".header").hasClass("gnb_color")){
             $(".header").css({"top":"-60px"}).addClass("gnb_color");
             $(".header").stop().animate({"top":"0px"},500);
+            $(".gnb_mo li .fa").addClass("gnb_mocolor");
         }
     }
     else{

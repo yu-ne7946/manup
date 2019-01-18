@@ -81,7 +81,7 @@ var depth=3;
 
 var audio = document.getElementById('audio');
 $("#play").click(function(){
-    audio.load();
+    // audio.load();  pause 오류
     if(audio.paused) {
         audio.play();
         $("#play").css("color","#d91023");
@@ -91,8 +91,12 @@ $("#play").click(function(){
         $("#play").css("color","#333");
     }
 }).trigger("click");
+ 
 
-/* function play() {
+/* window.onload = function(){
+    $(".audio_cir").click();
+}
+function play() {
     var audio = document.getElementById('audio');
     // audio.loop = true;
     if (audio.paused) {
@@ -105,31 +109,36 @@ $("#play").click(function(){
     }else{
         audio.pause();
         audio.currentTime = 0
-        $("#play").css("color","#fff");
+        $("#play").css("color","#333");
         // $('#play').addClass('glyphicon-play-circle')
         // $('#play').removeClass('glyphicon-pause')
     }
-} */
+}  */
 
 /***********************************/
 /******banner scroll ************/
 /****************************************/
 var pages =[]
 var now = 0;
-$(window).resize(function(){
+/* $(window).resize(function(){
     $(".page").each(function(i){
         pages[i] =$(this).position().top;
     });
-    // console.log(pages[1],pages[2],pages[3],pages[4],pages[5]);
 }).trigger("resize");
-
+ */
 $(".gnb").children("li").click(function(){
+    $(".page").each(function(i){
+        pages[i] =$(this).position().top;
+    });
     now = $(this).index();
     console.log(pages[now]);
     $("html, body").stop().animate({"scrollTop":pages[now]+"px"},300);
 }); 
 
 $(".gnb_sub").children("li").click(function(){
+    $(".page").each(function(i){
+        pages[i] =$(this).position().top;
+    });
     now = $(this).index();
     $("html, body").stop().animate({"scrollTop":pages[now]+"px"}, 300, function(){
         $(".gnb_sub").stop().slideUp(100);

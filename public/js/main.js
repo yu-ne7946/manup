@@ -4,6 +4,7 @@ $('.full-banner').vegas({
     delay: 4000,
     timer: false,
     shuffle: false,
+    cover:true,
     autoplay: true,
     loop:true,
     transition: 'fade',
@@ -26,15 +27,16 @@ $('.full-banner').vegas({
 
 /**scroll */
 $(window).scroll(function(){
-    var gap = $(window).scrollTop();
+    var gap = $(window, document, "html, body").scrollTop();
     if(gap > 150){
         if(!$(".header").hasClass("gnb_color")){
             $(".header").css({"top":"-60px"}).addClass("gnb_color");
             $(".header").stop().animate({"top":"0px"},500);
-            $(".gnb_mo li .fa").addClass("gnb_mocolor");
+            $(".fa-bars").css({"color":"#4c6b7c"});
         }
     }
     else{
+        $(".fa-bars").css({"color":"#fff"});
         $(".header").css({"top":"-60px"}).removeClass("gnb_color");
         $(".header").stop().animate({"top":"0px"},500);
     }
@@ -79,6 +81,7 @@ var depth=3;
 
 var audio = document.getElementById('audio');
 $("#play").click(function(){
+    audio.load();
     if(audio.paused) {
         audio.play();
         $("#play").css("color","#d91023");

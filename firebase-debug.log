@@ -1,0 +1,25 @@
+[debug] [2019-01-18T02:41:45.303Z] ----------------------------------------------------------------------
+[debug] [2019-01-18T02:41:45.310Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\라윤혜\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2019-01-18T02:41:45.310Z] CLI Version:   4.2.1
+[debug] [2019-01-18T02:41:45.310Z] Platform:      win32
+[debug] [2019-01-18T02:41:45.310Z] Node Version:  v8.12.0
+[debug] [2019-01-18T02:41:45.314Z] Time:          Fri Jan 18 2019 11:41:45 GMT+0900 (대한민국 표준시)
+[debug] [2019-01-18T02:41:45.314Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-01-18T02:41:45.366Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-01-18T02:41:45.368Z] > authorizing via signed-in user
+[debug] [2019-01-18T02:41:45.376Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/yune-manup  
+ 
+[debug] [2019-01-18T02:41:46.818Z] <<< HTTP RESPONSE 200
+[debug] [2019-01-18T02:41:46.823Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/yune-manup  
+ 
+[debug] [2019-01-18T02:41:48.294Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\라윤혜\Desktop\fbroot\manup'...
+[info] 
+[debug] [2019-01-18T02:41:48.301Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/27826447342/clients/_:getWebAppConfig  
+ 
+[debug] [2019-01-18T02:41:49.258Z] <<< HTTP RESPONSE 200
+[warn] !  hosting: Port 5000 is not available. Trying another port...
+[info] i  hosting[yune-manup]: Serving hosting files from: public
+[info] +  hosting[yune-manup]: Local server: http://localhost:5005

@@ -6,7 +6,7 @@
     <meta name="Keywords" content="웹표준, html5, 반응형웹" />
     <meta name="description" content="검색에서 노출되는 설명부분입니다." />
     <meta name="author" content="사이트주소를 적는 부분입니다." />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1" />
     <meta charset="utf-8" />
     <title>Man up</title>
     <!---<link rel="stylesheet" href="../assets/css/reset.css" />-->
@@ -61,7 +61,7 @@
 
     <div class="main-banner page" id="#page1">
 
-        <div class="full-banner" sytle="height:100% !important">
+        <div class="full-banner">
         </div>
 
 
@@ -136,7 +136,7 @@
         <div class="row syno page" style="margin:auto;">
             <!-- <div class="container"> -->
             <div class="col-lg-7 col-sm-6 col-xs-12 syno_img">
-                <!-- <img src="../img/syno2.jpg" alt="img" class="img" > -->
+                <!--img src="../img/syno2.jpg" alt="img"--> 
             </div>
             <div class="col-lg-5 col-sm-6 col-xs-12 syno_txt">
                     <h2>Synopsis</h2>
@@ -152,6 +152,7 @@
                         competitive indoor sports and yeah Jack finding out the truth that Nancy isn't his blind date.
                         'Man Up' a romantic comedy about taking chances, finding about being yourself, making decisions
                         and rolling with the consequences.
+                        <span class="syno_lang">Korean</span>
                     </p>
                     <p class="syno_ko">
                         “올해는 정말 연애를 하는 거야!”연애지수 0% 낸시, 생애 최고의 데이트를 훔쳤다?!
@@ -159,11 +160,9 @@
                          가던 중 우연히 만난 ‘잭’에게 묘한 끌림을 느끼게 된다. 낸시는 얼떨결에 잭의 가짜 소개팅녀 행세를 하게 되고, 
                           두 사람은 런던에서 생애 최고의 유쾌한 데이트를 즐긴다. 하지만 행복도 잠시, 낸시 앞에 나타난 옛 친구덕분에 
                           거짓말로 시작된 데이트는 위기를 맞게 되는데.. 올겨울, 누구나 꿈꾸는 솔직발랄 런던 로맨스가 온다!
+                          <span class="syno_lang">Korean</span>
                     </p>
-                    <span class="syno_lang">Korean</span>
-                   
-
-
+                    
                 </div>
             </div>
             <!-- </div> -->
@@ -605,189 +604,8 @@ She has became a realist and has become a little bit sarcastic, but she has a wa
 
 
 
-    <!-- <script src="../js/main.js"></script> -->
-    <script>
-    /**배너 베가스 */
-
-$('.full-banner').vegas({
-    delay: 4000,
-    timer: false,
-    shuffle: false,
-    autoplay: true,
-    loop:true,
-    transition: 'fade',
-    valign: 'center',
-    transitionDuration: 2000,
-     slides: [
-        { src:'../img/res_back2.jpg',
-            video: {
-                src: '../media/man2.mp4',
-                loop: true,
-                mute: true
-            }
-        }],
-    animation: 'kenburns',
-    animationDuration:"auto",
-    overlay: '../css/overlays/06.png',
-});
-
-
-
-/**scroll */
-$(window).scroll(function(){
-    var gap = $(window).scrollTop();
-    if(gap > 150){
-        if(!$(".header").hasClass("gnb_color")){
-            $(".header").css({"top":"-60px"}).addClass("gnb_color");
-            $(".header").stop().animate({"top":"0px"},500);
-        }
-    }
-    else{
-        $(".header").css({"top":"-60px"}).removeClass("gnb_color");
-        $(".header").stop().animate({"top":"0px"},500);
-    }
-});
-var gnbSub = 0;
-$(".fa-bars").click(function () {
-    gnbSub++;
-    if(gnbSub % 2 != 0){
-        $(".header").css({"border-bottom":"none"})
-    }else{
-        $(".header").css({"border-bottom":"1px solid rgba(255,255,255, .2)"});
-    };
-    $(".gnb_sub").stop().slideToggle(100);
-});
-
-
-
-
-/*banner text */
- var interval;
- var n = 0;
-var depth=3;
-//  $("#pro > h2").eq(0).css({"z-index":2});
-  banFade();
-  interval = setInterval(banFade,5000);
-
-  function banFade(){
-   $(".pro_txt").eq(n).animate({"opacity":1,"top": "-40%"},1500).delay(2000)
-
-   $(".pro_txt").eq(n).animate({"opacity":0,"top": "-60%"},1500);
-    if(n==6) {  n=-1; 
-        $(".pro_txt").animate({"top":"-23%"},100);
-   }
-     n++;
-
-};
-
-
-/**************************************/
-/***********music ************/
-/**************************************/
-
-var audio = document.getElementById('audio');
-$("#play").click(function(){
-    if(audio.paused) {
-        audio.play();
-        $("#play").css("color","#d91023");
-    }
-    else {
-        audio.pause();
-        $("#play").css("color","#333");
-    }
-}).trigger("click");
-
-/* function play() {
-    var audio = document.getElementById('audio');
-    // audio.loop = true;
-    if (audio.paused) {
-        audio.play();
-        
-        $("#play").css("color","#d91023");
-        
-        // $('#play').removeClass('glyphicon-play-circle')
-        // $('#play').addClass('glyphicon-pause')
-    }else{
-        audio.pause();
-        audio.currentTime = 0
-        $("#play").css("color","#fff");
-        // $('#play').addClass('glyphicon-play-circle')
-        // $('#play').removeClass('glyphicon-pause')
-    }
-} */
-
-/***********************************/
-/******banner scroll ************/
-/****************************************/
-var pages =[]
-var now = 0;
-$(window).resize(function(){
-    $(".page").each(function(i){
-        pages[i] =$(this).position().top;
-    });
-    // console.log(pages[1],pages[2],pages[3],pages[4],pages[5]);
-}).trigger("resize");
-
-$(".gnb").children("li").click(function(){
-    now = $(this).index();
-    console.log(pages[now]);
-    $("html, body").stop().animate({"scrollTop":pages[now]+"px"},300);
-}); 
-
-$(".gnb_sub").children("li").click(function(){
-    now = $(this).index();
-    $("html, body").stop().animate({"scrollTop":pages[now]+"px"}, 300, function(){
-        $(".gnb_sub").stop().slideUp(100);
-    });
-});
-
-
-/********************************/
-/*************syno languae*************/
-/********************************/
-
-var synoN=0;
-$(".syno_lang").click(function(){
-    synoN++;
-    if(synoN %2 !=0){
-        $(".syno_eng").fadeOut(300);
-        $(".syno_ko").fadeIn(300);
-        $(".syno_lang").text("English");
-    }else{
-        $(".syno_ko").fadeOut(300);
-        $(".syno_eng").fadeIn(300);
-        $(".syno_lang").text("Korean");
-    }
-})
-
-
-/********************************/
-/*************Cast language*************/
-/********************************/
-/* $(".cast_lang").click(function(){
-    $(".cast_eng").hide();
-    $(".cast_ko").show();
-
-    if($(".cast_eng").css({"display":"none"})){
-        $(".cast_lang").text("English");
-
-    }
-})
- */
-var castN=0;
-$(".cast_lang").click(function(){
-    castN++;
-    if(castN % 2 !=0){
-        $(".cast_eng").fadeOut(300);
-        $(".cast_ko").fadeIn(300);
-        $(".cast_lang").text("English");
-    }else{
-        $(".cast_ko").fadeOut(300);
-        $(".cast_eng").fadeIn(300);
-        $(".cast_lang").text("Korean");
-    }
-})
-    </script>
+    <script src="../js/main.js"></script>
+   
 </body>
 
 </html>
